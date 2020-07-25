@@ -1,0 +1,2 @@
+SELECT Last_Name,Job_id FROM employees
+ORDER BY Hire_date DESC
