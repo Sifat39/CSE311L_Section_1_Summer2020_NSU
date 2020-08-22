@@ -1,0 +1,10 @@
+SELECT e.Last_Name,d.Department_id,d.Department_name 
+FROM employees e,departments d
+WHERE e.department_id=d.department_id
+
+q2
+SELECT e.last_name ,d.department_name,l.Location_id 
+   FROM departments d
+   LEFT JOIN employees e
+   ON e.Department_Id = d.Department_Id
+   WHERE e.Commission_pct IS NOT NULL
