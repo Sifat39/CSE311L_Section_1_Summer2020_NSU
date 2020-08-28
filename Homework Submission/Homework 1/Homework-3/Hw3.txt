@@ -1,0 +1,30 @@
+q1
+SELECT Last_Name,Department_id,Salary "Daily SAlary"
+FROM employees
+
+q2
+
+SELECT CONCAT(Last_Name, " ", Job_id) AS "Employee and Title"
+FROM employees
+
+
+q3
+
+SELECT Last_Name,Hire_date,Job_id
+FROM employees
+WHERE Hire_date BETWEEN "1998-02-20" AND "1998-05-01"
+ORDER BY Hire_date ASC
+
+
+q4
+
+SELECT Last_Name,Hire_date,Department_id
+FROM employees
+WHERE Department_id BETWEEN 20 AND 50
+ORDER BY Last_Name ASC
+
+
+q5
+SELECT Last_Name,Hire_date
+FROM employees
+WHERE Hire_date LIKE '1994%' AND Salary>9200
